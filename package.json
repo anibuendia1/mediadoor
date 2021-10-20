@@ -1,0 +1,23 @@
+{
+  "name": "mediadoor",
+  "version": "1.0.0",
+  "description": "Agencia mediadoor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anibuendia1/mediadoor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anibuendia1/mediadoor/issues"
+  },
+  "homepage": "https://github.com/anibuendia1/mediadoor#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.17"
+  }
+}
