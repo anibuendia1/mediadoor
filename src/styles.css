@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&display=swap');
 
 @tailwind base;
+
+#toggle:checked ~ label div.toggle-dot {
+    @apply translate-x-4;
+}
+
 @tailwind components;
 @tailwind utilities;
 
 /* CSS Personalizado */
 
 .button {
-    @apply font-rale py-2 px-4 m-4 rounded bg-blue-500 text-white hover:bg-blue-700;
+    @apply font-rale py-2 px-4 m-4 rounded bg-blue-500 text-white hover:bg-blue-700 dark:bg-yellow-700;
 }
