@@ -7,13 +7,14 @@
     <title>Agencia Mediadoor</title>
     <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/whatsapp/302/cookie_1f36a.png" sizes="32x32">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="customstyles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="purecookie.css"/>
     <script src="purecookie.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
-<body class="antialiased"
+<body class="antialiased bg-blue-100"
     x-data="{'darkMode': false}"
       x-init="
          darkMode = JSON.parse(localStorage.getItem('darkMode'));
@@ -75,9 +76,12 @@
     </div>
   </div>
 
+    <div class="foto">
+      <img src="https://images.unsplash.com/photo-1635002962670-cd1cdd25d45d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80" class="foto2">
+    </div>
+ 
   </div>
 
-    </div>
 
 <script src="app.js"></script>
 
