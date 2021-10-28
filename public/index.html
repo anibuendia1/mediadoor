@@ -76,10 +76,32 @@
     </div>
   </div>
 
-    <div class="foto">
+  <div class="container mx-auto">
+    <h2 class="text-3xl text-indigo-400 font-bold text-center px-6 py-6">
+      Esto son 3 ejemplos de poner fotos con margen
+    </h2>
+  </div>
+
+    <div class="foto aspect-w-1 aspect-h-1 md:aspect-w-16 md:aspect-h-5">
       <img src="https://images.unsplash.com/photo-1635002962670-cd1cdd25d45d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80" class="foto2">
     </div>
- 
+
+    <div class="grid grid-cols-2 grid-rows-2 m-6">
+      <div class="relative col-span-2 row-span-2">
+        <img src="https://images.unsplash.com/photo-1635002962670-cd1cdd25d45d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80" class="h-full w-full object-cover rounded-3xl">
+        <div class="absolute top-3 left-3 bg-white text-gray-500 dark:bg-yellow-600 dark:text-red-800 px-4 py-1 text-normal flex items-center justify-center rounded-full">
+          Esto está hecho con grid
+        </div>
+      </div>
+    </div>
+
+    <div class="relative flex m-6">
+      <img src="https://images.unsplash.com/photo-1635002962670-cd1cdd25d45d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80" class="h-full w-full object-cover rounded-3xl">
+      <div class="absolute top-3 left-3 bg-white text-gray-500 dark:bg-yellow-600 dark:text-red-800 px-4 py-1 text-normal flex items-center justify-center rounded-full">
+        Esto está hecho con flexbox
+      </div>
+    </div>
+
   </div>
 
 
