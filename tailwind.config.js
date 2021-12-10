@@ -19,7 +19,7 @@ module.exports = {
     },
     fontFamily: {
       rale: ['Raleway'],
-      bebas: ['Bebas Neue']
+      bebas: ['Bebas Neue'],
     },
   },
   variants: {
