@@ -109,24 +109,19 @@
 
   </div>
 
+  <div class="bg-mblack px-20 py-20 m-10 font-bebas font-normal text-myellow flex justify-center items-center"></div>
   <form name="contact-mediadoor" method="POST" data-netlify="true">
     <p>
-      <label>Your Name: <input type="text" name="name" /></label>   
+      <label>Your Name: <input class="bg-myellowbk mb-4" type="text" name="name" /></label>   
     </p>
     <p>
-      <label>Your Email: <input type="email" name="email" /></label>
+      <label>Your Email: <input class="bg-myellowbk mb-4" type="email" name="email" /></label>
     </p>
     <p>
-      <label>Your Role: <select name="role[]" multiple>
-        <option value="leader">Leader</option>
-        <option value="follower">Follower</option>
-      </select></label>
+      <label>Message: <textarea class="bg-myellowbk mb-4" name="message"></textarea></label>
     </p>
     <p>
-      <label>Message: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
+      <button class="button" type="submit">Send</button>
     </p>
   </form>
 
