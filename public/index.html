@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="purecookie.css"/>
     <script src="purecookie.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
@@ -109,34 +109,28 @@
 
   </div>
 
-  <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flandingpage.fyi%2Flanding-page-checklist.html&text=Build%20your%20landing%20page%20with%20100%2B%20hand-picked%20tools%20in%2016%20steps%20%F0%9F%99%83%F0%9F%92%AF%20" target="_"
-  class="inline-block w-full px-5 py-2 mb-2 mr-1 text-base font-medium text-blue-400 no-underline align-middle bg-blue-50 border border-transparent border-solid rounded-lg cursor-pointer select-none sm:mb-0 sm:w-auto hover:bg-blue-100 hover:border-blue-100 hover:text-blue-500 focus-within:bg-blue-100 focus-within:border-blue-100"> Tweet </a>
-
-  
-  <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Hola esto es lo que hay que twittear" data-url="https://agenciamediadoor.com/" data-via="anibuendia1" data-hashtags="mediadoor" data-show-count="false">Tweet</a>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  <div class="share-btn-container">
-    <a href="#" class="facebook-btn">
-      <i class="fab fa-facebook"></i>
-    </a>
-
-    <a href="#" class="twitter-btn">
-      <i class="fab fa-twitter"></i>
-    </a>
-
-    <a href="#" class="linkedin-btn">
-      <i class="fab fa-linkedin"></i>
-    </a>
-
-    <a href="#" class="whatsapp-btn">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
+  <form name="contact-mediadoor" method="POST" data-netlify="true">
+    <p>
+      <label>Your Name: <input type="text" name="name" /></label>   
+    </p>
+    <p>
+      <label>Your Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+      <label>Your Role: <select name="role[]" multiple>
+        <option value="leader">Leader</option>
+        <option value="follower">Follower</option>
+      </select></label>
+    </p>
+    <p>
+      <label>Message: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
 
 
 <script src="app.js"></script>
-<script src="main.js"></script>
-
 </body>
 </html>
