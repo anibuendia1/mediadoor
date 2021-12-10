@@ -110,7 +110,7 @@
   </div>
 
   <div class="bg-mblack w-1/2 px-10 py-20 m-10 font-bebas font-normal text-2xl text-myellow flex justify-center items-center rounded-lg">
-  <form name="contact-mediadoor" method="POST" data-netlify="true" action="/successform.html">
+  <form name="contact-mediadoor" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/successform.html">
     <p>
       <label class="font-bebas font-normal text-2xl text-myellow mr-4">Your Name: <input class="bg-myellowbk mb-4 rounded-lg text-mblack p-2 pl-3" type="text" name="name" /></label>   
     </p>
@@ -120,6 +120,7 @@
     <p>
       <label class="font-bebas font-normal text-2xl text-myellow">Message: <textarea class="bg-myellowbk mb-4 rounded-lg text-mblack p-2 pl-3" name="message"></textarea></label>
     </p>
+    <div data-netlify-recaptcha="true"></div>
     <p>
       <button class="button" type="submit">Send</button>
     </p>
