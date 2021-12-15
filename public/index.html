@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia Mediadoor</title>
     <link rel="icon" type="image/png" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/whatsapp/302/cookie_1f36a.png" sizes="32x32">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/dist/styles.css">
     <link rel="stylesheet" href="customstyles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="purecookie.css"/>
@@ -26,31 +26,63 @@
          $watch('darkMode', value => localStorage.setItem('darkMode', JSON.stringify(value)))">
     <div :class="{'dark': darkMode === true}">
 
-       <!-- Toggle switch begins -->
-       <div class="absolute top-5 left-5 z-10">
-        <div class="flex justify-end items-center space-x-2">
-          <span class="text-sm text-gray-800 dark:text-gray-500">Light</span>
-            <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode" />
-            <label for="toggle" class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-0.5 cursor-pointer duration-300 ease-in-out dark:bg-gray-300">
-              <div class="toggle-dot bg-white w-4 h-4 rounded-full shadow-md transform duration-300 ease-in-out"></div>
-            </label>
-          <span class="text-sm text-gray-900 dark:text-yellow-500">🎃 Hallowen's mode</span>
+     <nav class="flex items-center justify-between flex-wrap bg-mblack p-6 fixed z-50 w-full">
+      <div class="flex items-center flex-shrink-0 text-myellow mr-6 ">
+        <img class="fill-current h-8 w-8 mr-2" width="54" height="54" src="Logo-pequeño-@AMARILLO.png">
+        <span class="font-semibold text-3xl tracking-normal font-bebas">agencia mediadoor</span>
+      </div>
+      <div class="block lg:hidden">
+        <button id='boton' class="flex items-center px-3 py-2 border rounded text-blue-200 border-indigo-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div id='menu' class="hidden w-full flex-grow lg:flex lg:items-center lg:justify-center lg:w-auto">
+        <div class="text-normal flex-col space-y-6 lg:space-y-0 lg:flex-grow flex lg:flex-row lg:items-center lg:justify-center">
+          <a href="/" class="block mt-4 mx-4 lg:inline-block lg:mt-0 text-mgreen hover:text-myellowbk mr-4 font-bebas text-2xl">
+            Valores
+          </a>
+          <a href="/" class="block mt-4 mx-4  lg:inline-block lg:mt-0 text-myellow hover:text-myellowbk mr-4 font-bebas text-2xl">
+            Equipo
+          </a>
+          <a href="/" class="block mt-4  mx-4 lg:inline-block lg:mt-0 text-myellow hover:text-myellowbk font-bebas text-2xl">
+            Proyectos
+          </a>
+          <a href="/" class="block mt-4 mx-4 lg:inline-block lg:mt-0 text-myellow hover:text-myellowbk mr-4 font-bebas text-2xl">
+            Servicios
+          </a>
+          <a href="/" class="block mt-4 mx-4  lg:inline-block lg:mt-0 text-myellow hover:text-myellowbk mr-4 font-bebas text-2xl">
+            Recursos
+          </a>
+          <a href="/" class="block mt-4  mx-4 lg:inline-block lg:mt-0 text-mred hover:text-myellowbk font-bebas text-2xl">
+            Diferencias
+          </a>
+
+            <!-- Toggle switch darkMode begins -->
+            <div class=" ml-2 hidden lg:block z-10 ">
+              <div class="flex items-center space-x-2">
+                <span class="text-lg text-white dark:text-gray-500">💡</span>
+                  <input id="toggle" type="checkbox" class="hidden" :value="darkMode" @change="darkMode = !darkMode" />
+                  <label for="toggle" class="w-9 h-5 flex items-center bg-gray-300 rounded-full p-0.5 cursor-pointer duration-300 ease-in-out dark:bg-gray-300">
+                    <div class="toggle-dot bg-white w-4 h-4 rounded-full shadow-md transform duration-300 ease-in-out"></div>
+                  </label>
+                <span class="text-lg text-white dark:text-yellow-500">🎄</span>
+              </div>
+            </div>
+            <!-- Toggle switch darkMode ends -->
+
+        </div>
+        <div>
+          <a href="#" class="inline-block text-lg font-bebas px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-myellowbk hover:bg-white mt-4 lg:mt-0">hablamos?</a>
         </div>
       </div>
-     <!-- Toggle switch ends -->
+    </nav>
 
      <div class="relative h-screen w-screen flex flex-col items-center justify-center bg-gray-200 dark:bg-yellow-500 text-gray-800 dark:text-gray-200">
       <img src="https://images.unsplash.com/photo-1635002962670-cd1cdd25d45d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1770&q=80" class="absolute h-full w-full object-cover z-0">
        <div class="flex items-center space-x-5">
-      <a href="" class="z-10"> 
-        <h1 class="ml-5 text-2xl text-black bg-mediadoor-100 dark:bg-m dark:text-myellow rounded-full px-5 py-1 font-bebas font-normal">Agencia Mediadoor</h1> 
-      </a>
-      <a href="#" id="boton" class="cursor-pointer z-10"> 
-        <h1 class="button">Agencia Mediadoor</h1> 
-      </a>
     </div>
     <div class="m-4 lg:mx-20 container z-10">
-      <p class="p-4 lg:px-44 text-myellow text-center text-4xl font-bebas font-normal">El Servicio de Mantenimiento de Repsol incluye, además de la revisión obligatoria por ley*, el servicio de Atención de Averías 24 horas todos los días del año.</p>
+      <p class="p-4 lg:px-44 text-white dark:text-myellow text-center text-4xl font-bebas font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam in, nulla repudiandae mollitia labore quae natus deserunt aperiam dignissimos nihil, autem doloribus rem accusantium necessitatibus. Consequuntur itaque neque quae accusamus?</p>
     </div>
       <div class="w-full sm:w-full md:w-1/3 lg:w-1/4 px-3 mb-8">
         <div class="relative ml-0 md:mr-10 transform duration-200 ease-in-out hover:scale-105 hover:-rotate-1">
@@ -65,8 +97,9 @@
           </a>
         </div>
       </div>
+      
     </div>
-  
+ 
     <div class="py-10 px-2 lg:p-10 bg-indigo-200">
     <div class="flex flex-col lg:flex-row space-y-3 space-x-2 items-center">
       <div class="flex flex-col w-2/3 mx-16" >
@@ -109,20 +142,25 @@
 
   </div>
 
-  <div class="bg-mblack w-1/2 px-10 py-20 m-10 font-bebas font-normal text-2xl text-myellow flex justify-center items-center rounded-lg">
+<div class="bg-mblack px-14 py-10 m-10 font-bebas font-normal text-2xl text-myellow block justify-center items-center rounded-2xl">
   <form name="contact-mediadoor" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/successform.html">
-    <p>
-      <label class="font-bebas font-normal text-2xl text-myellow mr-4">Your Name: <input class="bg-myellowbk mb-4 rounded-lg text-mblack p-2 pl-3" type="text" name="name" /></label>   
+    <p class="flex flex-col">
+      <label class="font-bebas font-normal text-2xl text-myellow mr-4">Your Name: </label>
+      <input class="bg-myellowbk mb-4 rounded-lg text-mblack p-2 pl-3" type="text" name="name" />   
     </p>
-    <p>
-      <label class="font-bebas font-normal text-2xl text-myellow">Your Email: <input class="bg-myellowbk mb-4 rounded-lg text-mblack p-2 pl-3" type="email" name="email" /></label>
+    <p class="flex flex-col">
+      <label class="font-bebas font-normal text-2xl text-myellow">Your Email: </label>
+      <input class="bg-myellowbk mb-4 rounded-lg text-mblack p-2 pl-3" type="email" name="email" />
     </p>
-    <p>
-      <label class="font-bebas font-normal text-2xl text-myellow">Message: <textarea class="bg-myellowbk mb-4 rounded-lg text-mblack p-2 pl-3" name="message"></textarea></label>
+    <p class="flex flex-col">
+      <label class="font-bebas font-normal text-2xl text-myellow">Message: </label>
+      <textarea class="bg-myellowbk mb-4 rounded-lg text-mblack p-2 pl-3" name="message"></textarea>
     </p>
-    <div data-netlify-recaptcha="true"></div>
+    <div class="mx-2" data-netlify-recaptcha="true"></div>
     <p>
-      <button class="button" type="submit">Send</button>
+      <button class="button flex" type="submit">Open the door
+        <span><img class="fill-current h-8 w-8 ml-2" width="54" height="54" src="Logo-pequeño-@AMARILLO.png"></span>
+      </button>
     </p>
   </form>
 </div>

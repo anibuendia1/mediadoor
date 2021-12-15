@@ -1,4 +1,11 @@
 module.exports = {
+  content: [
+    './components/**/*.{html,js}',
+    './pages/**/*.{html,js}',
+    './public/index.html',
+    './src/**/*.{html,js}',
+    './src/**/*.js',
+  ],
   purge: [],
   darkMode: 'class',
   theme: {
@@ -18,7 +25,6 @@ module.exports = {
       },
     },
     fontFamily: {
-      rale: ['Raleway'],
       bebas: ['Bebas Neue'],
     },
   },
